@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {VariablesPage} from "./pages/VariablesPage/VariablesPage";
 
 function App() {
+
+    // function logElement(){
+    //     console.log('document', document);
+    //     console.log('element', document.querySelector('.NormalTextRun'));
+    // }
+    //
+    // const test = () => {
+    //     click().then(() => {
+    //         logElement();
+    //     })
+    // }
+    //
+    // const click = async () => {
+    //     return Word.run( async (context) => {
+    //         context.document.body.insertText('variable', Word.InsertLocation.end);
+    //     });
+    // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <VariablesPage />
     </div>
   );
 }
